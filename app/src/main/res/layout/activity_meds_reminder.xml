@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a15056158.medsreminder.medsReminder"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvMed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Medication To Be Taken"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medicine Name:"
+            android:id="@+id/textViewName"
+            android:textSize="16dp"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextName"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medication Dosage"
+            android:id="@+id/textViewAmt"
+            android:textSize="16dp"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextAmt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:id="@+id/TextViewTime"
+            android:textSize="16dp"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextTime" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To Be Taken:"
+            android:textSize="16dp"
+            android:textColor="@android:color/black"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="275dp" />
+
+        <RadioGroup
+            android:id="@+id/rgb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton16"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Before Meal" />
+
+            <RadioButton
+                android:id="@+id/radioButton15"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="After Meal" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remarks"
+            android:id="@+id/textViewRemarks"
+            android:textSize="16dp"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/edit_textRemarks"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:inputType="text|textMultiLine"
+            android:gravity="top"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="104dp">
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:id="@+id/buttonSubmit" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Reset"
+                android:id="@+id/buttonClear"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>
